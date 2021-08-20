@@ -20,8 +20,10 @@
   "lint-staged": {
     "src/**/*.{js,json}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
-  "hooks": {
-    "commit-msg": "lint-staged"
+  "husky":{
+    "hooks": {
+      "commit-msg": "lint-staged"
+    }
   },
   "dependencies": {
     "express": "^4.17.1",
