@@ -1,13 +1,11 @@
-class NewsController{
-    
+class NewsController {
     // [GET] : news
-    index (req, res){
+    index(req, res) {
         res.render('news/index');
     }
 
     // [Get]: /news/:slug
-    details (req, res)
-    {
+    details(req, res) {
         res.render('news/details');
     }
 }
