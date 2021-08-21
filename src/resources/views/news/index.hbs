@@ -1,1 +1,5 @@
-<h1>Tao là tất cả tin tức</h1>
+<ul class="people_list">
+  {{#each news}}
+    <li><a href="/news/{{this.slug}}">{{this.name}}</a></li>
+  {{/each}}
+</ul>

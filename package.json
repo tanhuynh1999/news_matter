@@ -19,11 +19,17 @@
   },
   "homepage": "https://github.com/tanhuynh1999/news_matter#readme",
   "lint-staged": {
-    "src/**/*.{js,json}": "your-cmd"
+    "src/**/*.{js,json}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.3"
+    "express-handlebars": "^5.3.3",
+    "mongoose": "^5.13.7"
   },
   "devDependencies": {
     "husky": "^7.0.1",

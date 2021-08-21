@@ -3,9 +3,14 @@ const morgan = require('morgan');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const route = require('./routes');
+const db = require('./config/db');
 
 const app = express();
 const port = 3000;
+
+//Connect to database
+db.connect();
+
 
 //Morgan
 app.use(morgan('combined'));

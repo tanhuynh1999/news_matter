@@ -3,6 +3,6 @@ var router = express.Router();
 
 var siteController = require('../app/controllers/SiteController');
 
-router.use('/', siteController.home);
+router.get('/', siteController.home);
 
 module.exports = router;
